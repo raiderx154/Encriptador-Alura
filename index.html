@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img  class="logo"  src="./assets/Logo.png" alt="log alura">
+    </header>
+    <main>
+        <section class="izquierda">
+            
+                <textarea  id="palabra" class="textarea" placeholder="Ingrese el texto aqui"></textarea>
+                <div class="alerta">
+                <img src="./assets/alert.png" alt="">
+                    <p class="info-alerta">Solo letras minusculas  y sin acentos</p>
+                </div>    
+                    <div class="contenedor-btn">
+                      
+                        <button class="btn-encriptar" onclick="btnEncriptar()">
+                            
+                            Encriptar</button>
+                        <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                    </div>  
+        </section>
+        <section class="derecha">
+            <div>
+                <img  id="imgmuneco" src="./assets/muneco.png" alt="">
+            </div>
+            <div id="subtitulo">
+                <h3>Ningun mensaje fue encontrado</h3>
+            </div>
+            <div >
+                <p id="parrafo">Ingrese el texto que deseas encriptar o desencriptar</p>
+                <button id="btn-copy" class="btn-copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+   
+</body>
+<script src="./js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</html>
